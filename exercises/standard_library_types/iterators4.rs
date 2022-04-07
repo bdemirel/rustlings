@@ -1,8 +1,15 @@
 // iterators4.rs
 
-// I AM NOT DONE
-
 pub fn factorial(num: u64) -> u64 {
+    // let mut result: u64 = 1;
+    // for n in 2..(num + 1) {
+    //     // println!("n: {}, result: {}", n, result);
+    //     result *= n;
+    // }
+    // result
+
+    (2..(num + 1)).fold(1, |acc, n| acc * n)
+
     // Complete this function to return the factorial of num
     // Do not use:
     // - return
